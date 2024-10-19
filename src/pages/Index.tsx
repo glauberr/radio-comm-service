@@ -1,10 +1,6 @@
 import React from 'react';
-import { Button } from "@/components/ui/button"
-import { useNavigate } from 'react-router-dom';
 
 const Index = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-blue-200 flex flex-col items-center justify-center p-4 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -15,20 +11,10 @@ const Index = () => {
         />
       </div>
       <div className="z-10 text-center">
-        {/* Logo da empresa */}
-        <img
-          src="/images/logo-placeholder.png"
-          alt="Logo da Radiocomunicação"
-          className="mx-auto mb-6 w-32 h-32 object-contain"
-        />
         <h1 className="text-4xl font-bold text-blue-800 mb-6">Comércio e Serviços de Radiocomunicação</h1>
         <p className="text-xl text-blue-600 mb-8 text-center max-w-2xl">
           Sua solução completa para gerenciamento, aluguel, reparo e compra de equipamentos de radiocomunicação.
         </p>
-        <div className="space-x-4 mb-12">
-          <Button onClick={() => navigate('/login')} variant="default">Entrar</Button>
-          <Button onClick={() => navigate('/register')} variant="outline">Registrar</Button>
-        </div>
         
         {/* Nova seção de marketing de serviços */}
         <div className="bg-white bg-opacity-80 p-6 rounded-lg shadow-lg max-w-4xl mx-auto mb-8">
