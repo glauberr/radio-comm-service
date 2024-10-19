@@ -25,7 +25,7 @@ const Index = () => {
         </div>
         
         {/* Nova seção de marketing de serviços */}
-        <div className="bg-white bg-opacity-80 p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+        <div className="bg-white bg-opacity-80 p-6 rounded-lg shadow-lg max-w-4xl mx-auto mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-4">Nossos Serviços</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="p-4 bg-blue-100 rounded-lg">
@@ -44,6 +44,19 @@ const Index = () => {
               <h3 className="font-bold text-blue-700">Consultoria Técnica</h3>
               <p className="text-sm text-blue-600">Orientação especializada para otimizar suas operações de radiocomunicação.</p>
             </div>
+          </div>
+        </div>
+
+        {/* Nova seção de informações de contato */}
+        <div className="bg-white bg-opacity-80 p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+          <h2 className="text-2xl font-semibold text-blue-800 mb-4">Entre em Contato</h2>
+          <div className="flex flex-col items-center space-y-2">
+            <p className="text-blue-600">
+              <span className="font-bold">Telefone:</span> (22) 9 9001 4400
+            </p>
+            <p className="text-blue-600">
+              <span className="font-bold">E-mail:</span> contato@radiocomunicacao.com
+            </p>
           </div>
         </div>
       </div>
