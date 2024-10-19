@@ -3,13 +3,15 @@ import { useForm } from 'react-hook-form';
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useToast } from "@/hooks/use-toast"
+import { addUser } from "@/utils/localStorage"
 
 const Register = () => {
   const { register, handleSubmit } = useForm();
   const { toast } = useToast()
 
   const onSubmit = (data: any) => {
-    console.log(data);
+    addUser(data);
+    console.log('Usuário registrado:', data);
     toast({
       title: "Registro bem-sucedido",
       description: "Bem-vindo à Radiocomunicação!",
