@@ -8,63 +8,63 @@ const EquipmentManagement = () => {
 
   const handleRegister = () => {
     toast({
-      title: "Equipment Registered",
-      description: "New equipment has been added to the inventory.",
+      title: "Equipamento Registrado",
+      description: "Novo equipamento foi adicionado ao inventário.",
     })
   };
 
   const handleRental = () => {
     toast({
-      title: "Rental Price Updated",
-      description: "The rental price has been updated successfully.",
+      title: "Preço de Aluguel Atualizado",
+      description: "O preço de aluguel foi atualizado com sucesso.",
     })
   };
 
   const handleRepair = () => {
     toast({
-      title: "Repair Request Submitted",
-      description: "A new repair request has been created.",
+      title: "Solicitação de Reparo Enviada",
+      description: "Uma nova solicitação de reparo foi criada.",
     })
   };
 
   const handlePurchase = () => {
     toast({
-      title: "Purchase Completed",
-      description: "The equipment purchase has been processed.",
+      title: "Compra Concluída",
+      description: "A compra do equipamento foi processada.",
     })
   };
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Equipment Management</h1>
+      <h1 className="text-2xl font-bold mb-4">Gerenciamento de Equipamentos</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-white p-4 rounded shadow">
-          <h2 className="text-xl font-semibold mb-2">Register Equipment</h2>
-          <Input placeholder="Equipment Name" className="mb-2" />
-          <Input placeholder="Serial Number" className="mb-2" />
-          <Button onClick={handleRegister}>Register</Button>
+          <h2 className="text-xl font-semibold mb-2">Registrar Equipamento</h2>
+          <Input placeholder="Nome do Equipamento" className="mb-2" />
+          <Input placeholder="Número de Série" className="mb-2" />
+          <Button onClick={handleRegister}>Registrar</Button>
         </div>
 
         <div className="bg-white p-4 rounded shadow">
-          <h2 className="text-xl font-semibold mb-2">Update Rental Price</h2>
-          <Input placeholder="Equipment ID" className="mb-2" />
-          <Input placeholder="New Price" type="number" className="mb-2" />
-          <Button onClick={handleRental}>Update Price</Button>
+          <h2 className="text-xl font-semibold mb-2">Atualizar Preço de Aluguel</h2>
+          <Input placeholder="ID do Equipamento" className="mb-2" />
+          <Input placeholder="Novo Preço" type="number" className="mb-2" />
+          <Button onClick={handleRental}>Atualizar Preço</Button>
         </div>
 
         <div className="bg-white p-4 rounded shadow">
-          <h2 className="text-xl font-semibold mb-2">Request Repair</h2>
-          <Input placeholder="Equipment ID" className="mb-2" />
-          <Input placeholder="Issue Description" className="mb-2" />
-          <Button onClick={handleRepair}>Submit Repair Request</Button>
+          <h2 className="text-xl font-semibold mb-2">Solicitar Reparo</h2>
+          <Input placeholder="ID do Equipamento" className="mb-2" />
+          <Input placeholder="Descrição do Problema" className="mb-2" />
+          <Button onClick={handleRepair}>Enviar Solicitação de Reparo</Button>
         </div>
 
         <div className="bg-white p-4 rounded shadow">
-          <h2 className="text-xl font-semibold mb-2">Purchase Equipment</h2>
-          <Input placeholder="Equipment Name" className="mb-2" />
-          <Input placeholder="Quantity" type="number" className="mb-2" />
-          <Button onClick={handlePurchase}>Purchase</Button>
+          <h2 className="text-xl font-semibold mb-2">Comprar Equipamento</h2>
+          <Input placeholder="Nome do Equipamento" className="mb-2" />
+          <Input placeholder="Quantidade" type="number" className="mb-2" />
+          <Button onClick={handlePurchase}>Comprar</Button>
         </div>
       </div>
     </div>
