@@ -15,6 +15,12 @@ const Index = () => {
         />
       </div>
       <div className="z-10 text-center">
+        {/* Logo da empresa */}
+        <img
+          src="/images/logo-placeholder.png"
+          alt="Logo da Radiocomunicação"
+          className="mx-auto mb-6 w-32 h-32 object-contain"
+        />
         <h1 className="text-4xl font-bold text-blue-800 mb-6">Comércio e Serviços de Radiocomunicação</h1>
         <p className="text-xl text-blue-600 mb-8 text-center max-w-2xl">
           Sua solução completa para gerenciamento, aluguel, reparo e compra de equipamentos de radiocomunicação.
